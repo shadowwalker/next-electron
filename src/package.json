@@ -1,0 +1,10 @@
+{
+  "name": "next-electron",
+  "version": "1.0.0",
+  "description": "Next.js + Electron.js Boilerplate",
+  "main": "main.js",
+  "repository": "https://github.com/shadowwalker/next-electron",
+  "author": "Wei Wang",
+  "license": "MIT",
+  "private": false
+}
