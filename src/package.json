@@ -1,10 +1,21 @@
 {
-  "name": "next-electron",
-  "version": "1.0.0",
-  "description": "Next.js + Electron.js Boilerplate",
-  "main": "main.js",
-  "repository": "https://github.com/shadowwalker/next-electron",
-  "author": "Wei Wang",
-  "license": "MIT",
-  "private": false
+    "name": "next-electron",
+    "version": "1.0.0",
+    "description": "Next.js + Electron.js Boilerplate",
+    "main": "main/main.js",
+    "repository": "https://github.com/shadowwalker/next-electron",
+    "author": "Wei Wang",
+    "license": "MIT",
+    "private": false,
+    "keywords": [
+        "Boilerplate",
+        "Electron",
+        "Next"
+    ],
+    "scripts": {
+        "start": "electron ."
+    },
+    "devDependencies": {
+        "electron": "^3.0.4"
+    }
 }
