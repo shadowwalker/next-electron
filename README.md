@@ -1,4 +1,4 @@
-# Next.js + Electron.js
+# Next.js + Electron.js Boilerplate
 
 [TOC]
 
@@ -46,3 +46,12 @@ nvm use 10.12.0
 
 > Ref: [nvm](https://github.com/creationix/nvm)
 
+## Tips
+
+### Add .gitignore
+
+Use [add-gitnore](https://github.com/TejasQ/add-gitignore) to generate `.gitignore` file, which use [gitignore.io](https://www.gitignore.io/) web service
+
+``` bash
+npx add-gitignore
+```
