@@ -2,11 +2,13 @@
 
 [TOC]
 
-**Making apps, the morden way**
+*Create apps, the morden way*
+
+
 
 ## Getting Started
 
-#### Install nvm and node.js
+### Install nvm and node.js
 
 **Windows**
 
@@ -46,6 +48,10 @@ nvm use 10.12.0
 
 > Ref: [nvm](https://github.com/creationix/nvm)
 
+### Usage
+
+
+
 ## Tips
 
 ### Add .gitignore
@@ -56,3 +62,16 @@ Use [add-gitnore](https://github.com/TejasQ/add-gitignore) to generate `.gitigno
 npx add-gitignore
 ```
 
+## Reference
+
+- [The Modern JavaScript Tutorial](https://javascript.info/)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Thanks
+
+This project is inspired by the following works
+
+- [Building Electron Apps with Next.js](https://leo.im/2017/electron-next)
