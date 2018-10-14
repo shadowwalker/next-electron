@@ -1,8 +1,8 @@
 // Native
 const { format } = require('url')
 // Packages
-const {resolve} = require('app-root-path')
-const {app, BrowserWindow} = require('electron')
+const { resolve } = require('app-root-path')
+const { app, BrowserWindow } = require('electron')
 
 const isDev = !app.isPackaged
 
@@ -11,7 +11,7 @@ const isDev = !app.isPackaged
 let mainWindow
 
 function main() {
-  function createWindow () {
+  function createWindow() {
     mainWindow = new BrowserWindow({
       width: 1080,
       height: 840,
@@ -28,7 +28,7 @@ function main() {
     } else {
       mainWindow.loadURL(
         format({
-          pathname: resolve('build/index.html'),
+          pathname: resolve('build/app/index.html'),
           protocol: 'file:',
           slashes: true
         })
@@ -36,7 +36,7 @@ function main() {
     }
 
     // Emitted when the window is closed.
-    mainWindow.on('closed', function () {
+    mainWindow.on('closed', function() {
       // Dereference the window object, usually you would store windows
       // in an array if your app supports multi windows, this is the time
       // when you should delete the corresponding element.
@@ -50,7 +50,7 @@ function main() {
   app.on('ready', createWindow)
 
   // Quit when all windows are closed.
-  app.on('window-all-closed', function () {
+  app.on('window-all-closed', function() {
     // On OS X it is common for applications and their menu bar
     // to stay active until the user quits explicitly with Cmd + Q
     if (process.platform !== 'darwin') {
@@ -58,7 +58,7 @@ function main() {
     }
   })
 
-  app.on('activate', function () {
+  app.on('activate', function() {
     // On OS X it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (mainWindow === null) {
