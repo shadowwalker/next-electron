@@ -1,10 +1,10 @@
 # Next.js + Electron.js Boilerplate
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 [TOC]
 
 *Create apps, the morden way*
-
-
 
 ## Getting Started
 

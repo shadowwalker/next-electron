@@ -1,10 +1,11 @@
-const del = require("del")
+const del = require('del')
 
 const patterns = [
-  "app/.next",
-  "../build"
+  'app/.next',
+  'public',
+  'dist'
 ]
 
-del(patterns, { force: true }).then(paths => {
-  console.log("Deleted files and folders:\n", paths.join("\n"))
+del(patterns).then(paths => {
+  console.log('Deleted files and folders:\n', paths.join('\n'))
 })

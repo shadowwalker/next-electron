@@ -1,4 +1,5 @@
-/packages
+/src/public/
+/src/dist/
 
 # Created by https://www.gitignore.io/api/linux,node,vim,macos,windows,visualstudiocode,sublimetext
 
