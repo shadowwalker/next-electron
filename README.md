@@ -6,6 +6,10 @@
 
 *Create apps, the morden way*
 
+## Overview
+
+[Electron.js](https://electronjs.org/) 
+
 ## Getting Started
 
 ### Install nvm and node.js
@@ -50,6 +54,12 @@ nvm use 10.12.0
 
 ### Usage
 
+#### Clone/Fork Repository
+
+``` bash
+git clone https://github.com/shadowwalker/next-electron
+```
+
 
 
 ## Tips
@@ -61,6 +71,8 @@ Use [add-gitnore](https://github.com/TejasQ/add-gitignore) to generate `.gitigno
 ``` bash
 npx add-gitignore
 ```
+
+
 
 ## Reference
 
@@ -75,3 +87,7 @@ npx add-gitignore
 This project is inspired by the following works
 
 - [Building Electron Apps with Next.js](https://leo.im/2017/electron-next)
+
+App icons borrowed from
+
+- [electron/electron-api-demos](https://github.com/electron/electron-api-demos/tree/master/assets/app-icon)

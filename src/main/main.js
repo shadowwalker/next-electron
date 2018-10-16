@@ -9,11 +9,11 @@ let mainWindow
 
 function main () {
   function createMainWindow () {
+    // https://github.com/electron/electron/blob/master/docs/api/browser-window.md
     mainWindow = new BrowserWindow({
       width: 1080,
-      height: 840,
-      minWidth: 800,
-      minHeight: 600
+      height: 540,
+      resizable: false
     })
 
     if (isDev) {

@@ -23,8 +23,8 @@
     "build:next": "next build app",
     "start": "run-s build start:dev",
     "start:dev": "run-p start:next-start start:electron-start",
-    "start:next-start": "next start app --port 3000",
-    "start:electron-start": "cross-env PORT=3000 electron .",
+    "start:next-start": "next app --port 3000",
+    "start:electron-start": "wait-on http://localhost:3000 && cross-env PORT=3000 electron .",
     "release": "run-s build release:*",
     "release:next-export": "cross-env NODE_ENV=production next export app -o public",
     "release:electron-builder": "electron-builder",
@@ -66,7 +66,8 @@
     "npm-run-all": "^4.1.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "standard": "^12.0.1"
+    "standard": "^12.0.1",
+    "wait-on": "^3.1.0"
   },
   "dependencies": {}
 }
