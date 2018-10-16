@@ -25,9 +25,13 @@
     "start:dev": "run-p start:next-start start:electron-start",
     "start:next-start": "next app --port 3000",
     "start:electron-start": "wait-on http://localhost:3000 && cross-env PORT=3000 electron .",
-    "release": "run-s build release:*",
+    "release-mac": "run-s build release:next-export release:electron-builder-mac",
+    "release-win": "run-s build release:next-export release:electron-builder-win",
+    "release-linux": "run-s build release:next-export release:electron-builder-linux",
     "release:next-export": "cross-env NODE_ENV=production next export app -o public",
-    "release:electron-builder": "electron-builder",
+    "release:electron-builder-mac": "electron-builder --mac",
+    "release:electron-builder-win": "electron-builder --win",
+    "release:electron-builder-win": "electron-builder --linux",
     "clean": "node script/clean.js"
   },
   "build": {
@@ -38,6 +42,22 @@
     "mac": {
       "category": "your.app.category.type",
       "icon": "res/icons/mac/icon.icns",
+      "files": [
+        "!app/*",
+        "!script/*",
+        "!test"
+      ]
+    },
+    "win": {
+      "icon": "res/icons/win/icon.ico",
+      "files": [
+        "!app/*",
+        "!script/*",
+        "!test"
+      ]
+    },
+    "linux": {
+      "icon": "res/icons/png/1024.png",
       "files": [
         "!app/*",
         "!script/*",
