@@ -31,7 +31,7 @@
     "release:next-export": "cross-env NODE_ENV=production next export app -o public",
     "release:electron-builder-mac": "electron-builder --mac",
     "release:electron-builder-win": "electron-builder --win",
-    "release:electron-builder-win": "electron-builder --linux",
+    "release:electron-builder-linux": "electron-builder --linux",
     "clean": "node script/clean.js"
   },
   "build": {
