@@ -108,7 +108,7 @@ src
 └── yarn.lock
 ```
 
-### Start
+### Develop
 
 ``` bash
 yarn start
@@ -118,13 +118,20 @@ This will start a next server on [http://localhost:3000](http://localhost:3000),
 
 Now every change made within `app` folder will be rendered in the main window immediately, that's because Next.js packed with hot reloading feature for you.
 
+Just build Next.js application as usual under `app` folder, it will hot reload for you.
+
+If you need to change anything related to Electron, such as changing window size, do it in `main` folder and do a `yarn start` again.
+
 **In case you are**
 
 - new to JavaScript: [The Modern JavaScript Tutorial](https://javascript.info/)
+- new to Node.js: [Node School](https://nodeschool.io/)
 - new to React.js: [React Tutorial](https://reactjs.org/tutorial/tutorial.html)
 - new to Next.js: [Learn Next.js](https://nextjs.org/learn/)
 - new to Electron.js: [Electron API Demos](https://github.com/electron/electron-api-demos)
 - still confused: there are bunch of good materials out there waiting for you to explore
+
+> All the materials listed above is **highly recommended**, at least they helped me a lot to learn those things quickly and easily.
 
 ### Release
 
