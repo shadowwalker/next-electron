@@ -165,6 +165,27 @@ Use [add-gitnore](https://github.com/TejasQ/add-gitignore) to generate `.gitigno
 npx add-gitignore
 ```
 
+### Atom ignored names
+
+Append following to `Atom Settings -> Ignored Names ` for better searching
+
+```bash
+node_modules, .next, _next
+```
+
+### Avoid using global jsx for style
+
+``` JavaScript
+<style global jsx>{`
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+`}</style>
+```
+
+This global style jsx should be rarely used, I found this will cause inconsistent behaviour in hot reloading.
+
 ## Reference
 
 - [The Modern JavaScript Tutorial](https://javascript.info/)
