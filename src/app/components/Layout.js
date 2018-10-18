@@ -1,10 +1,7 @@
-import staticUrl from '../utils/staticUrl'
-
 export default (props) => (
   <div>
     <style global jsx>{`
       body {
-        background-image: url(${staticUrl('img/main-bg.png')});
         margin: 0;
         overflow: hidden;
       }
