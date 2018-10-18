@@ -27,9 +27,22 @@ This project is a spark between Next.js and Electron.js to leverage the power of
 - [Standard](https://standardjs.com) js linter
 - Clean script help you clean generated files
 
-## Boilerplate with Material-UI
+## Material-UI
 
-For boilerplate with material-ui, please go to [material-ui branch](https://github.com/shadowwalker/next-electron/tree/material-ui).
+[Material-UI](https://material-ui.com/) is a *React components that implement Google's Material Design*, as it states on the website. It's still new and becoming popular.
+
+Because we use hot reload and server side rendering when development, the page sometimes breaks by inconsistent injected css styles. There are a lot of things going on which I don't fully understand, so basically I was following the [example: material-ui with nextjs](https://github.com/mui-org/material-ui/tree/master/examples/nextjs).
+
+The trick happens in `app/pages/_app.js` and `app/pages/_document.js` which customize the behaviour of App and Document component in next.js. The docs about the customization is [here](https://nextjs.org/docs/#custom-app).
+
+**Features with material-ui**
+
+- Fully support `@material-ui/core` and `@material-ui/icons`
+- Multiple themes
+
+## Boilerplate without Material-UI
+
+For boilerplate without material-ui, please go to [master branch](https://github.com/shadowwalker/next-electron/tree/master).
 
 ## Getting Started
 
