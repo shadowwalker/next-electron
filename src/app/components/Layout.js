@@ -1,4 +1,4 @@
-import staticUrl from '../utils/staticUrl'
+import staticUrl from '../utils/static-url'
 
 export default (props) => (
   <div>
