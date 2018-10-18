@@ -113,7 +113,9 @@ src
 │   ├── static             # static resources
 │   │   └── img
 │   └── utils              # utilitis
-│       └── staticUrl.js
+│       ├── static-url.js  # used to generate path to static resources
+│       ├── page-context.js# used in pages/_app.js to make material-ui work
+│       └── themes.js      # multiple themes support
 ├── main                   # used for electron
 │   └── main.js            # start point for electron
 ├── package.json           # !change meta data to your own
