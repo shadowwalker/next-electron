@@ -27,6 +27,10 @@ This project is a spark between Next.js and Electron.js to leverage the power of
 - [Standard](https://standardjs.com) js linter
 - Clean script help you clean generated files
 
+## Boilerplate with Material-UI
+
+For boilerplate with material-ui, please go to [material-ui branch](https://github.com/shadowwalker/next-electron/tree/material-ui).
+
 ## Getting Started
 
 ### Install nvm and node.js
