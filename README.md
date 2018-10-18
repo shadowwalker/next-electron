@@ -100,7 +100,7 @@ src
 │   ├── static             # static resources
 │   │   └── img
 │   └── utils              # utilitis
-│       └── staticUrl.js
+│       └── static-url.js  # used to generate path for static resources
 ├── main                   # used for electron
 │   └── main.js            # start point for electron
 ├── package.json           # !change meta data to your own
