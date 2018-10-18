@@ -24,6 +24,7 @@ This project is a spark between Next.js and Electron.js to leverage the power of
   - Means this boilerplate is production ready
 - Hot reloading during development
 - Secure file protocol enforced in production
+- Release installer/package/bundle using [electron-builder](https://www.electron.build/)
 - [Standard](https://standardjs.com) js linter
 - Clean script help you clean generated files
 
