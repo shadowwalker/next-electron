@@ -9,24 +9,24 @@ import Typography from '@material-ui/core/Typography'
 
 const styles = {
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   }
 }
 
 class component extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {}
   }
 
-  render(){
+  render () {
     const { classes } = this.props
 
     return (
       <div className={classes.root}>
-        <AppBar position="static" color="default">
+        <AppBar position='static' color='default'>
           <Toolbar>
-            <Typography variant="h6" color="inherit">
+            <Typography variant='h6' color='inherit'>
               Photos
             </Typography>
           </Toolbar>
@@ -37,7 +37,7 @@ class component extends React.Component {
 }
 
 component.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 }
 
 export default withStyles(styles)(component)

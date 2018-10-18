@@ -11,37 +11,37 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 const styles = {
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   grow: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20,
-  },
+    marginRight: 20
+  }
 }
 
 class component extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {}
   }
 
-  render(){
+  render () {
     const { classes } = this.props
 
     return (
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position='static'>
           <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
+            <Typography variant='h6' color='inherit' className={classes.grow}>
               NextElectron
             </Typography>
-            <Button color="inherit">Change Theme</Button>
+            <Button color='inherit'>Change Theme</Button>
           </Toolbar>
         </AppBar>
         {this.props.children}
@@ -51,7 +51,7 @@ class component extends React.Component {
 }
 
 component.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 }
 
 export default withStyles(styles)(component)
