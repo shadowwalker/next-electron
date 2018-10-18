@@ -137,6 +137,13 @@ If you need to change anything related to Electron, such as changing window size
 
 > All the materials listed above is **highly recommended**, at least they helped me a lot to learn those things quickly and easily.
 
+### Add Dependencies
+
+Follow these rules:
+
+- Add to dev dependencies if it's used in `app` folder. Let the webpack magic to pack/split the code.
+- Add to runtime dependencies if it's used outside `app` folder, e.g. `main` folder.
+
 ### Release
 
 ``` bash
